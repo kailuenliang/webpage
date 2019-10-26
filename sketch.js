@@ -40,8 +40,8 @@ if((count%2) == 0){
 } else{
       for(var x = 0; x < width; x+=100){
         noStroke();
-        fill(0,random(200));
-        rect(x,int(random(height)),int(random(5)),5);
+        fill(0,random(20));
+        rect(x,int(random(height)),int(random(20)),5);
       //  stroke(200,150,random(0,100),2);
         //line(width,mouseY,mouseX,height/2);
       //rect(random(width),x,random(50));
