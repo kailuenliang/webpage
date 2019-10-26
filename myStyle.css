@@ -185,7 +185,10 @@ strong{
 }
 .contentButton{
   margin:0.2em;
-  padding:5em 5em;
+  /*padding:5em 5em;*/
+
+  width:300px;
+  height:300px;
 
   text-decoration: none;
 
@@ -193,6 +196,19 @@ strong{
 
   background-position: center;
   background-size: cover;
+}
+
+.youtubeResponsive{
+  width:100%;
+  height:0;
+  padding-bottom: 56.25%;
+  position:relative;
+}
+
+.youtubeResponsive iframe{
+  position:absolute;
+  width:100%;
+  height:100%;
 }
 
 .Void{
