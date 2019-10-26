@@ -10,8 +10,6 @@ body{
   margin:0px;
 
   font-family: 'Work Sans', sans-serif;
-
-
   /*background:rgb(242, 240, 234)*/
 }
 
@@ -52,9 +50,6 @@ body{
 
   font-family: 'Work Sans', sans-serif;
 
-
-
-
 }
 
 .accentColor{
@@ -91,7 +86,7 @@ body{
   width:70%;
   margin-right: auto;
   margin-left: auto;
-  padding:2em;
+
 
   text-align: center;
 
@@ -110,7 +105,7 @@ body{
 
   color: white;
   border-radius: 100px;
-  background:rgb(255, 153, 69);
+  background: rgb(14, 59, 168);
 
 }
 
@@ -119,7 +114,7 @@ body{
 
 }
 
-
+/*
 a:link, a:visited{
   color: white;
 }
@@ -129,6 +124,7 @@ a:focus, a:hover{
 a:active{
   color:rgb(255, 168, 200);
 }
+*/
 
 
 h2, h1,p {
@@ -141,95 +137,77 @@ strong{
   color: rgb(249, 187, 167);
 }
 
-
-.myPics{
-  color:white;
-}
-
-.myPicsContainer{
+/* ----------------------------------------------------------CONTENT CONTAINER----------------------------------------------------------------*/
+.container{
   display:flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  /*flex-around , flex-end , center, space-around, space-between*/
-  /*height:50vh; */
-
-  color:white;
+ justify-content:space-around;
+  align-items: flex-start;
+  width:100%;
+  border:1px solid black;
 }
 
 
-.contentSize{
+.ContentSizeItem{
   width: 300px;
   height:300px;
-  margin:10px;
+  border:2px solid red;
+
+}
+.contentSizePic{
+  width: 200px;
+  height:200px;
+  margin:0 auto;
 
   border: 2px solid white;
   border-radius: 200px;
   background-position: center;
   background-size: cover;
-
 }
-.pic01{
-  background-image: url("https://s3.amazonaws.com/ganbreederpublic/imgs/ef6947a68aea931e9d962de2.jpeg");
+.Proj01{
+  background-image: url("/media/Void.png");
 }
 
-.pic02{
+.Proj02{
   background-image: url("https://s3.amazonaws.com/ganbreederpublic/imgs/d17c5f7add39d7ba0338d3bb.jpeg");
 }
 
-.pic03{
+.Proj03{
   background-image: url('https://s3.amazonaws.com/ganbreederpublic/imgs/3bcda4e6c61dbe782a35c4d1.jpeg');
 
 }
 
-.pic04{
-  background-image: url('https://s3.amazonaws.com/ganbreederpublic/imgs/9f2f35a7df26bcd73c3a1715.jpeg');
-
+.contentContainer{
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
 }
-.pic05{
-  background-image: url('https://s3.amazonaws.com/ganbreederpublic/imgs/6060e17d725c763e4e378412.jpeg');
+.contentButton{
+  margin:0.2em;
+  padding:5em 5em;
 
-}
+  text-decoration: none;
 
-.pic06{
-  background-image: url('https://s3.amazonaws.com/ganbreederpublic/imgs/54c3d881aed20292efa202d0.jpeg');
+  color: white;
 
-}
-
-.pic07{
-  background-image: url("https://s3.amazonaws.com/ganbreederpublic/imgs/1952578d786a5cb88c136d46.jpeg");
-}
-
-.pic08{
-  background-image:url('https://s3.amazonaws.com/ganbreederpublic/imgs/9beab2b3009eac9a17332151.jpeg');
+  background-position: center;
+  background-size: cover;
 }
 
-.pic09{
-  width: 620px;
-  height:300px;
+.Void{
+  background-image: url("/media/Void.png");
+}
 
-  border: 2px solid white;
-  background-image:url('https://s3.amazonaws.com/ganbreederpublic/imgs/37159df5be1b95944245a609.jpeg');
+.Hollow{
+  background-image: url("https://f4.bcbits.com/img/a1084492088_16.jpg")
 
 }
 
-/*
-.position-test{
-  width: 70px;
-  height:70px;
-
-
-  border-radius: 200px;
-  text-align: center;
-
-  position: absolute;
-
-  top:25%;
-  left:25%;
-  background: white;
-
+.Grains{
+  background-image: url("/media/grains02.png");
 }
-*/
+
 
 .blogFormat{
   padding:1.5em;
