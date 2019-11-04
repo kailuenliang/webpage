@@ -62,7 +62,7 @@ body{
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   flex-wrap: wrap;
 
 }
@@ -173,10 +173,10 @@ body{
 
   margin-right: auto;
   margin-left: auto;
-  color:black;
-  background-color: white;
+  color:white;
+  /*background-color: white;*/
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .button{
