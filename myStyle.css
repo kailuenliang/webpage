@@ -1,8 +1,9 @@
-html{
-  background:rgb(242, 241, 234)
-  margin:0;
+html {
+  /* Missing semicolon */
+  background: rgb(242, 241, 234);
+  margin: 0;
   /*background-image: url("https://ak9.picdn.net/shutterstock/videos/1848529/thumb/1.jpg");*/
-font-family: 'Cormorant', serif;
+  font-family: 'Cormorant', serif;
   font-size: 22px;
 }
 
@@ -15,6 +16,8 @@ body{
 }
 */
 
+
+/* no need to set font family again in body as it's already set in HTML */
 body{
   font-family: 'Cormorant', serif;
   background-color: white;
@@ -25,14 +28,14 @@ body{
   text-align: center;
 }
 
-*{
+* {
   margin: 0;
   padding:0;
   box-sizing: border-box;
 }
 
 .menu-container{
-  color:#fff;
+  color: #fff;
   /*text-shadow: 1px 1px 4px white;8?
   /* background-color: #5995DA; */
   background-image: url("images/banner.jpeg");
@@ -47,11 +50,11 @@ body{
 
 .menu{
 /*  border: 1px solid #fff;*/
-  width:900px;
+  width: 900px;
 
-  display:flex;
+  display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
   flex-wrap: wrap;
 
 }
@@ -78,8 +81,8 @@ body{
 }
 
 .photo-grid{
-  width:900px;
-  display:flex;
+  width: 900px;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
@@ -88,14 +91,15 @@ body{
 .photo-grid-item{
 
   width: 300px;
-  height:150px;
-  border:2px solid black;
+  height: 150px;
+  border: 2px solid black;
 
 }
+
+
+
 .first-item{
   background-image: url("images/img01.jpeg");
-  background-position: center;
-  background-size: cover;
 }
 
 .second-item{
@@ -116,12 +120,13 @@ body{
 
 .card{
   width: auto;
+  /* more concisely written margin: 10px auto */
   margin: 10px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px;
 
-  color:white;
+  color: white;
   border-bottom: 2px solid rgb(101, 101, 101);
 
 
@@ -133,6 +138,7 @@ body{
   width:100%;
   height:100px;
 
+  /* consider downloading this image in case the site goes offline */
   background-image: url("https://radiichina.com/wp-content/uploads/2019/04/soulspeak-kai-luen-china.wav-wordy-chacha-china-hip-hop-beats.jpg");
   background-position: center;
   background-size: contain;
@@ -143,8 +149,8 @@ body{
   margin-top: 1.5em;
 
   text-align: justify;
- color:black;
- background-color: rgba(255,255,255,1);
+  color: black;
+  background-color: rgba(255,255,255,1);
  /*  border: 1px solid rgb(74, 74, 73); */
 
 }
@@ -152,7 +158,7 @@ body{
 .accentColor{
   text-decoration: underline;
 
-  color:black;
+  color: black;
 
   font-size: 1.5rem;
 }
@@ -173,7 +179,7 @@ body{
 
   margin-right: auto;
   margin-left: auto;
-  color:white;
+  color: white;
   /*background-color: white;*/
   text-align: center;
   font-size: 1rem;
@@ -183,7 +189,8 @@ body{
 /*  display: inline-block;*/
 
   margin:0.5em;
-  padding:.1em  0.1em;
+  /* could just be padding: .1em; */
+  padding: .1em  0.1em;
 
   text-decoration: none;
 
@@ -223,24 +230,24 @@ strong{
 
 /* ----------------------------------------------------------CONTENT CONTAINER----------------------------------------------------------------*/
 .container{
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
  justify-content:space-around;
   align-items: flex-start;
-  width:100%;
-  border:1px solid black;
+  width: 100%;
+  border: 1px solid black;
 }
 
 /* Not sure whats going on here */
 .ContentSizeItem{
   width: 300px;
-  height:300px;
-  border:2px solid red;
+  height: 300px;
+  border: 2px solid red;
 
 }
 .contentSizePic{
   width: 300px;
-  height:300 auto;
+  height: 300 auto;
 
   border: 2px solid white;
   border-radius: 200px;
@@ -260,8 +267,8 @@ strong{
   margin:0.2em;
   /*padding:5em 5em;*/
 
-  width:400px;
-  height:200px;
+  width: 400px;
+  height: 200px;
 
   text-decoration: none;
   font-size: 1.5rem;
@@ -272,11 +279,14 @@ strong{
   background-size: cover;
 }
 
+/* https://embedresponsively.com/ gives good responsive embed codes if you are 
+ * having trouble */
+
 .youtubeResponsive{
-  width:100%;
+  width: 100%;
   height:0;
   padding-bottom: 56.25%;
-  position:relative;
+  position: relative;
 }
 
 .youtubeResponsive iframe{
@@ -285,10 +295,13 @@ strong{
   height:100%;
 }
 
+/* I think this leading / in the URL might not work on GH pages */
 .Void{
   background-image: url("/media/Void.png");
 }
 
+/* same comment here about downloading important images rather than
+ * relying on externally hosted conent */
 .Hollow{
   background-image: url("https://f4.bcbits.com/img/a1084492088_16.jpg")
 
@@ -308,7 +321,7 @@ strong{
 
   text-align: justify;
 
-  color:white;
+  color: white;
   background:black;
 
   font-family: 'Work Sans', sans-serif;
@@ -323,9 +336,9 @@ strong{
 
 /*----------------*/
 .blogPost001{
-  display:block;
+  display: block;
 
-  width:100%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -333,8 +346,8 @@ strong{
   text-align: center;
 }
 
-.blogPost001>img{
-  display:block;
+.blogPost001 > img{
+  display: block;
 
   width:50%;
   margin: 0 auto;
