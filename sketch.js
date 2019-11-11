@@ -1,4 +1,8 @@
-let count = 0;
+
+
+// how does mouseIsPressed work for mobile?
+
+var count = 0;
 var canvas;
 
 var tileCount = 10;
@@ -26,7 +30,7 @@ var y = (windowHeight - height) / 2;
 
   canvas.style('z-index','-1');
   //canvas.parent("home-container");
-  background(0);
+  background(255);
 }
 
 
@@ -116,7 +120,7 @@ function draw() {
 function mousePressed() {
   actRandomSeed = random(100000);
 
-  background(0);
+clear(); //clear the canvas....
 
  // background(0);
 }
