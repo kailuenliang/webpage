@@ -31,11 +31,18 @@ body{
   box-sizing: border-box;
 }
 
+.home-container{
+
+  margin:0 auto;
+}
+
+
 .menu-container{
   color:#fff;
   /*text-shadow: 1px 1px 4px white;8?
   /* background-color: #5995DA; */
-  background-image: url("images/banner.jpeg");
+  /*background-image: url("images/banner.png");*/
+  background-color: black;
   background-position: center;
   background-size: contain;
   padding: 20px 0;
@@ -357,8 +364,10 @@ strong{
 
 .bio-container{
   max-width: 980px;
+  width:90%;
   margin: 0 auto;
-  font-size: 1.7em;
+  font-size: 1.2em;
+  padding:2em;
 
 }
 
