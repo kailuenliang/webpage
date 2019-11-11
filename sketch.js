@@ -1,6 +1,7 @@
 
 
 // how does mouseIsPressed work for mobile?
+// maybe use accelerationX or touch
 
 var count = 0;
 var canvas;
@@ -30,7 +31,7 @@ var y = (windowHeight - height) / 2;
 
   canvas.style('z-index','-1');
   //canvas.parent("home-container");
-  background(255);
+  background(0); // like the black background
 }
 
 
@@ -40,7 +41,7 @@ function draw() {
 
   strokeWeight(1);
 
-  var c1 = color(220);
+  var c1 = color(200);
   var c2 = color(255);
   var c3 = color(0);
 
@@ -48,22 +49,21 @@ function draw() {
 
   for (var gridY = 0; gridY < tileCount; gridY++) {
     for (var gridX = 0; gridX < tileCount; gridX++) {
+
       var posX = gridX * width / tileCount;
       var posY = gridY * height / tileCount;
 
-      var shiftX = random(0,height) / tileCount * random(-randomRange, randomRange);
-      var shiftY = random(0,width) / tileCount * random(-randomRange, randomRange);
+      var shiftX = mouseY / tileCount * random(-randomRange, randomRange);
+      var shiftY = mouseX / tileCount * random(-randomRange, randomRange);
       var shiftX2 = mouseX / tileCount * random(-randomRange, randomRange);
       var shiftY2 = mouseY / tileCount * random(-randomRange, randomRange);
       var shiftX3 = mouseX / tileCount * random(-randomRange, randomRange);
       var shiftY3 = mouseY / tileCount * random(-randomRange, randomRange);
-
       var shiftX4 = mouseX / tileCount * random(-randomRange, randomRange);
       var shiftY4 = mouseY / tileCount * random(-randomRange, randomRange);
-
       var shiftX5 = mouseX / tileCount * random(-randomRange, randomRange);
       var shiftY5 = mouseY / tileCount * random(-randomRange, randomRange);
-            var shiftX6 = mouseX / tileCount * random(-randomRange, randomRange);
+      var shiftX6 = mouseX / tileCount * random(-randomRange, randomRange);
       var shiftY6 = mouseY / tileCount * random(-randomRange, randomRange);
 
 
@@ -124,5 +124,3 @@ clear(); //clear the canvas....
 
  // background(0);
 }
-
-var gd = '2019_11_09_00';
