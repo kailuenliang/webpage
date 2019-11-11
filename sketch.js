@@ -25,7 +25,7 @@ function setup() {
 var y = (windowHeight - height) / 2;
   //canvas.position(0, 0); dont want absolute position
 
-  canvas.style('display', 'block');
+  canvas.style('display', 'block'); //this fixes the issue i was having with positioning....or maybe it was taking out the absolute position(0,0)
   //canvas.position(0,0);
 
   canvas.style('z-index','-1');
