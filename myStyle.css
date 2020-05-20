@@ -262,8 +262,8 @@ strong{
   height:400px;
 
   text-decoration: none;
-  font-size: 1.1rem;
-  text-shadow: 1px 1px 1px black;
+  font-size: 0.9rem;
+  /*text-shadow: 0.5px 0.5px 0.5px black; */
   color: white;
   background-position: center;
   background-size: cover;
@@ -293,7 +293,7 @@ strong{
 }
 
 .Grains{
-  background-image: url("/media/grains03.png");
+  background-image: url("/media/grains03.jpg");
 }
 
 .Visuals{
@@ -301,50 +301,10 @@ strong{
 }
 
 
-.blogFormat{
-  padding:1.5em;
 
-  text-align: justify;
-
-  color:white;
-  background:black;
-
-}
-
-.blogFormat > h1{
-  padding: 20px;
-
-  text-align: center;
-}
 
 /*----------------*/
-.blogPost001{
-  display:block;
 
-  width:100%;
-  margin: 0 auto;
-}
-
-.blogPost001 > h3{
-  text-align: center;
-}
-
-.blogPost001>img{
-  display:block;
-
-  width:50%;
-  margin: 0 auto;
-  margin-right: auto;
-  margin-left: auto;
-  padding:25px;
-
-}
-.blogPost001 > p{
-  padding:9px;
-
-  text-align: justify;
-
-}
 
 /*----------------*/
 
