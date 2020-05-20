@@ -175,8 +175,8 @@ flex-wrap: wrap;
   margin-top: 1.5em;
 
   text-align: justify;
- color:black;
- background-color: rgba(255,255,255,1);
+  color:black;
+  background-color: rgba(255,255,255,1);
  /*  border: 1px solid rgb(74, 74, 73); */
 
 }
@@ -196,7 +196,6 @@ flex-wrap: wrap;
 
 .center{
   text-align: center;
-
   font-size: 1.2em;
 }
 
@@ -216,11 +215,8 @@ flex-wrap: wrap;
 
   margin:0.5em;
   padding:.1em  0.1em;
-
   text-decoration: none;
-
   color: white;
-
   background: rgba(0,0,0,0.7);
 
 }
@@ -273,14 +269,12 @@ strong{
 .contentSizePic{
   width: 300px;
   height:300 auto;
-
   border: 2px solid white;
   border-radius: 200px;
   background-position: center;
   background-size: cover;
 }
 /* ---------*/
-
 
 .contentContainer{
   display: flex;
@@ -292,7 +286,6 @@ strong{
 .contentButton{
   margin:0.2em;
   /*padding:5em 5em;*/
-
   width:400px;
   height:400px;
 
@@ -300,7 +293,6 @@ strong{
   font-size: 1.5rem;
   text-shadow: 2px 2px 1px black;
   color: white;
-
   background-position: center;
   background-size: cover;
 }
@@ -318,17 +310,18 @@ strong{
   height:100%;
 }
 
+/*---------------------------------------------------------------- */
+/*PICS FOR PROJECT CONTENT */
 .Void{
   background-image: url("/media/Void.png");
 }
 
 .Hollow{
-  background-image: url("https://f4.bcbits.com/img/a1084492088_16.jpg")
-
+  background-image: url("https://f4.bcbits.com/img/a1084492088_16.jpg");
 }
 
 .Grains{
-  background-image: url("/media/grains02.png");
+  background-image: url("/media/grains03.png");
 }
 
 .Visuals{
@@ -343,7 +336,6 @@ strong{
 
   color:white;
   background:black;
-
 
 }
 
@@ -398,15 +390,13 @@ strong{
 
 .OneLiner{
   background-color: rgb(181, 230, 237);
-
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 
 @media only screen and (max-width: 812px) {
 
   .contentContainer{
-
     flex-direction: column;
   }
 }
